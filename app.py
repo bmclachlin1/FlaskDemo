@@ -10,7 +10,7 @@ app.secret_key = "Super secret key!!!"
 
 # Connect to 'demo' DB as 'blake'
 try:
-  cnx = mysql.connector.connect(user='blake', password='password', host='127.0.0.1', database = 'demo')
+  cnx = mysql.connector.connect(user='root', password='password123', host='127.0.0.1', database = 'demo')
   cnx.autocommit = True
   cursor = cnx.cursor(dictionary=True)
   print("Successfully connected to demo!")
